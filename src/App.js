@@ -5,9 +5,8 @@ import News from './components/News';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
-
 
 export default class App extends Component {
   render() {

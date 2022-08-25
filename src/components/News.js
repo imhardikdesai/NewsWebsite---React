@@ -72,7 +72,7 @@ export class News extends Component {
                 <div className="row">
                     {!this.state.loading && this.state.articles.map((element) => {
                         return <div className="col-md-4" key={element.url}>
-                            <NewsItem title={element.title ? element.title : "Empty Title"} imageUrl={element.urlToImage ? element.urlToImage : "https://asianatimes.com/wp-content/uploads/2022/08/asteroid-6054186_1920_1659586399339_1659712789934_1659712789934.jpg"} description={element.description ? element.description : "Empty Description"} url={element.url} />
+                            <NewsItem title={element.title ? element.title : "Empty Title"} imageUrl={element.urlToImage ? element.urlToImage : "https://asianatimes.com/wp-content/uploads/2022/08/asteroid-6054186_1920_1659586399339_1659712789934_1659712789934.jpg"} description={element.description ? element.description : "Empty Description"} url={element.url} author={element.author} date={element.publishedAt} source={element.source.name}/>
                         </div>
                     })}
                 </div>
